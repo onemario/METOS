@@ -52,7 +52,7 @@ namespace Demo.Metos.API
     public class MetosHttpHandler : DelegatingHandler
     {
         private static readonly CultureInfo _enUsCulture = new CultureInfo("en-us");
-        private static readonly Uri _apiBaseAddress = new Uri("https://api.fieldclimate.com/v1");
+        private static readonly Uri _apiBaseAddress = new Uri("https://api.fieldclimate.com/v2");
 
         /// <summary>
         /// FieldClimate account: public HMAC key to access METOS station data and services 
@@ -65,7 +65,7 @@ namespace Demo.Metos.API
         public string PrivateKey { get; set; }
 
         /// <summary>
-        /// Defaults to https://api.fieldclimate.com/v1
+        /// Defaults to https://api.fieldclimate.com/v2
         /// </summary>
         public Uri ApiUri { get; set; }
 
