@@ -42,7 +42,8 @@ class FcApi:
             print(" > {} {}".format(response.status_code, response.reason))
 
     def get(self, route):
-        auth = AuthHmacMetos(route, self._publicKey, self._privateKey, 'GET')
+        pure_route = route.split('?', 1)[0] #remove parameters from the route for signature calculation
+        auth = AuthHmacMetos(pure_route, self._publicKey, self._privateKey, 'GET')
         response = requests.get(self._apiUri + route, headers={'Accept': 'application/json'}, auth=auth)
         response.close()
         self.__checkStatus(response, auth, route)
