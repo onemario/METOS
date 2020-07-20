@@ -2,10 +2,12 @@ import fc_api
 import pprint
 
 uri = 'https://api.fieldclimate.com/v2'
-publicKey = 'take this keys from ng.fieldcliamte.com and ...'
-privateKey = '... log in with your FieldClimate account, go to User menu > API services > GENERATE NEW'
 
-station_id = '000026E8'     # an example demo station
+#take this keys from https://ng.fieldcliamte.com > User menu > API services > GENERATE NEW
+publicKey = 'copy your public key'
+privateKey = 'copy your private key'
+
+station_id = '00000146'     # an example demo station
 
 api = fc_api.FcApi(uri, publicKey, privateKey)
 
