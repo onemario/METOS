@@ -3,7 +3,7 @@ import pprint
 
 uri = 'https://api.fieldclimate.com/v2'
 
-#take this keys from https://ng.fieldcliamte.com > User menu > API services > GENERATE NEW
+#take this keys from https://ng.fieldclimate.com > User menu > API services > GENERATE NEW
 publicKey = 'copy your public key'
 privateKey = 'copy your private key'
 
