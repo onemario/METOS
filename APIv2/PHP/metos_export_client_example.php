@@ -50,7 +50,11 @@ $sensors_to_export = array(
 	array(
 		'label' => 'leaf_wetness',
 		'group' => '12',
-		'aggr' => 'time'));
+		'aggr' => 'time'),
+	array(
+		'label' => 'soil_temperature',
+		'group' => '3',
+		'aggr' => 'avg'));
 
 /* Iterate through stations: Note: there is a /user/stations API route which gives you all available devices */
 foreach($stations as $station) {
